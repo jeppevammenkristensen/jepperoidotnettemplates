@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Jeppe Roi Kristensen",
+    "classifications": [
+        "Roslyn"
+    ],
+    "description": "Roslyn analyzer but using the xunit approach",
+    "shortname": "jrkroslynanalyzer",
+    "name": "Roslyn Custom Analyzer and Codefix",
+    "identity": "jrk.roslynanalyzer",
+    "sourceName": "AnalyzerCodefixCollection",
+    "tags": {
+        "language": "C#",
+        "type": "solution"
+    },
+    "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "net5.0",
+                    "description": ".Net 5.0"
+                },
+                {
+                    "choice": "net6.0",
+                    "description": ".Net 6.0"
+                },
+                {
+                    "choice": "net7.0",
+                    "description": ".Net 7.0"
+                }
+            ],
+            "replaces": "net7.0",
+            "defaultValue": "net7.0"
+        },
+        "AnalyzerId": {
+            "type": "parameter",
+            "description": "The id for the analyzer",
+            "datatype": "text",
+            "defaultValue": "Custom-0001",
+            "replaces": "$AnalyzerId$"
+        },
+        "AnalyzerTitle": {
+            "type": "parameter",
+            "description": "The title of the analyzer",
+            "datatype": "text",
+            "defaultValue": "Type name contains lowercase letters",
+            "replaces": "$AnalyzerTitle$"
+        },
+        "AnalyzerMessageFormat": {
+            "type": "parameter",
+            "description": "The MessageFormat of the analyzer",
+            "datatype": "text",
+            "defaultValue": "Type name '{0}' contains lowercase letters",
+            "replaces": "$AnalyzerMessageFormat$"
+        },
+        "AnalyzerDescription": {
+            "type": "parameter",
+            "description": "The Description of the analyzer",
+            "datatype": "text",
+            "defaultValue": "Type names should be all uppercase.",
+            "replaces": "$AnalyzerDescription$"
+        },
+        "AnalyzerCategory": {
+            "type": "parameter",
+            "description": "The Category of the analyzer",
+            "datatype": "text",
+            "defaultValue": "Naming",
+            "replaces": "$AnalyzerCategory$"
+        },
+        "CodefixTitle": {
+            "type": "parameter",
+            "description": "The title of the codefix",
+            "datatype": "text",
+            "defaultValue": "Naming",
+            "replaces": "$CodefixTitle$"
+        }
+    },
+    "preferNameDirectory": true
+}

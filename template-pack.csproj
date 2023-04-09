@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.1</PackageVersion>
+    <PackageId>JeppeRoiKristensen.Roslyn.Templates</PackageId>
+    <Authors>Jeppe Roi Kristensen</Authors>
+    <Description>Roslyn analyzer and codefix template with xunit</Description>
+    <PackageTags>dotnet-new;templates</PackageTags>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>    
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Content\**\*.*" PackagePath="content" Exclude="Content\**\bin\**;Content\**\obj\**"/>
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
