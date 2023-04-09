@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.1</PackageVersion>
-    <PackageId>JeppeRoiKristensen.Roslyn.Templates</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>JeppeRoiKristensen.Dotnet.Templates</PackageId>
     <Authors>Jeppe Roi Kristensen</Authors>
-    <Description>Roslyn analyzer and codefix template with xunit</Description>
-    <PackageTags>dotnet-new;templates</PackageTags>
+    <Description>A list currenlty consisisting of Roslyn analyzer and codefix template with xunit</Description>
+    <PackageTags>dotnet-new;templates; roslyn</PackageTags>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
