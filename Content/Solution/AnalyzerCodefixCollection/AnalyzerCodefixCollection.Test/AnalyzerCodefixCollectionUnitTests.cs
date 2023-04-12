@@ -50,7 +50,7 @@ namespace AnalyzerCodefixCollection.Test
         }
     }";
 
-            var expected = Verify.Diagnostic("AnalyzerCodefixCollection");
+            var expected = Verify.Diagnostic(AnalyzerCodefixCollectionAnalyzer.DiagnosticId);
             await Verify.VerifyCodeFixAsyncV2(test, fixtest);
         }
     }

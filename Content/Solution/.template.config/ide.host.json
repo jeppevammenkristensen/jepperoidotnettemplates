@@ -3,44 +3,52 @@
     "order": 0,
     "icon": "icon.png",
     "symbolInfo": [      
-        {       
-          "id": "AnalyzerTitle",
-          "name": 
-          {
-            "text": "The title of the analyzer"
-          },
-          "isVisible": true      
+      {         
+        "id": "AnalyzerId",
+        "name": 
+        {
+          "text": "The id of the analyzer"
         },
-        {       
-          "id": "AnalyzerMessageFormat",
-          "name": 
-          {
-            "text": "The MessageFormat of the analyzer"
-          },
-          "isVisible": true      
+        "isVisible": true      
+      },
+      {         
+        "id": "AnalyzerTitle",
+        "name": 
+        {
+          "text": "The title of the analyzer"
         },
-        {       
-          "id": "AnalyzerDescription",
+        "isVisible": true      
+      },
+      {       
+        "id": "AnalyzerMessageFormat",
+        "name": 
+        {
+          "text": "The MessageFormat of the analyzer"
+        },
+        "isVisible": true      
+      },
+      {       
+        "id": "AnalyzerDescription",
+        "name": 
+        {
+          "text": "The Description of the analyzer"
+        },
+        "isVisible": true      
+      },{       
+          "id": "AnalyzerCategory",
           "name": 
           {
-            "text": "The Description of the analyzer"
+            "text": "The Category of the analyzer"
           },
           "isVisible": true      
         },{       
-            "id": "AnalyzerCategory",
-            "name": 
-            {
-              "text": "The Category of the analyzer"
-            },
-            "isVisible": true      
-          },{       
-            "id": "CodefixTitle",
-            "name": 
-            {
-              "text": "The Codefix title"
-            },
-            "isVisible": true      
-          }
+          "id": "CodefixTitle",
+          "name": 
+          {
+            "text": "The Codefix title"
+          },
+          "isVisible": true      
+        }
 
       ]
 }

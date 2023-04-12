@@ -4,6 +4,6 @@
 
 Rule ID | Category | Severity | Notes
 --------|----------|----------|--------------------
-AnalyzerCodefixCollection  |  Naming  |  Warning | 
+$AnalyzerId$  |  Naming  |  Warning | 
 
 

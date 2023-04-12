@@ -2,22 +2,30 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageId>JeppeRoiKristensen.Dotnet.Templates</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>Jeppe Roi Kristensen</Authors>
     <Description>A list currenlty consisisting of Roslyn analyzer and codefix template with xunit</Description>
-    <PackageTags>dotnet-new;templates; roslyn</PackageTags>
+    <PackageTags>dotnet-new;templates;roslyn</PackageTags>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
     <NoDefaultExcludes>true</NoDefaultExcludes>    
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>    
+    <Title>Jeppe Roi Kristensen Dotnet Templates</Title>    
+    <RepositoryUrl>https://github.com/jeppevammenkristensen/jepperoidotnettemplates</RepositoryUrl>    
+    <RepositoryType>git</RepositoryType>    
+    <PackageReleaseNotes>Fix for the diagnostic id not being used correctly. Attempted better parameter names in the cli</PackageReleaseNotes>    
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Content\**\*.*" PackagePath="content" Exclude="Content\**\bin\**;Content\**\obj\**"/>
+    <Content Include="Content\**\*.*" PackagePath="content" Exclude="Content\**\bin\**;Content\**\obj\**" />
     <Compile Remove="**\*" />
+     <None Include="docs\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

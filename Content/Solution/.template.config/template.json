@@ -39,7 +39,7 @@
             "type": "parameter",
             "description": "The id for the analyzer",
             "datatype": "text",
-            "defaultValue": "Custom-0001",
+            "defaultValue": "JJK0001",
             "replaces": "$AnalyzerId$"
         },
         "AnalyzerTitle": {
@@ -74,7 +74,7 @@
             "type": "parameter",
             "description": "The title of the codefix",
             "datatype": "text",
-            "defaultValue": "Naming",
+            "defaultValue": "Convert to upper",
             "replaces": "$CodefixTitle$"
         }
     },
